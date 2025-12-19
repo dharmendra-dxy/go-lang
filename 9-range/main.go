@@ -53,7 +53,7 @@ func main(){
 	}
 
 
-	// STRING and RANGES``
+	// STRING and RANGES
 	const stringName = "go_lang";
 
 	for idx, c:= range stringName{
