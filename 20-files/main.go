@@ -148,7 +148,18 @@ func main() {
 
 	//flush:
 	writer.Flush()
-
 	fmt.Println("WRITTEN TO NEW FILE SUCCESSFULLY")
+
+
+	/* 
+	---------------------------
+	DELETE A FILE
+	---------------------------
+	*/
+
+	er:= os.Remove("example.txt") // provide absolute path
+	if er!=nil{
+		panic(er)
+	}
 
 }
